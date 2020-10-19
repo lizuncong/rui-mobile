@@ -3,10 +3,7 @@
 const ENV = process.env.NODE_ENV;
 if (
     ENV !== 'production' &&
-    ENV !== 'test' &&
-    typeof console !== 'undefined' &&
-    console.warn && // eslint-disable-line no-console
-    typeof window !== 'undefined'
+    ENV !== 'test'
 ) {
     // eslint-disable-next-line no-console
     console.warn(
