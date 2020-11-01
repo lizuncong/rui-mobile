@@ -10,7 +10,7 @@ function getProjectPath(...filePath) {
 }
 
 const cleanDir = (dir) => {
-    console.log('getProjectPath....', getProjectPath('_site'))
+    rimraf.sync(getProjectPath(dir))
 }
 
 cleanDir();
